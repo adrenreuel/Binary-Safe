@@ -1,5 +1,5 @@
 # Binary-Safe
-A simple binary safe using the DE-10 Lite Board, written in Verilog.
+A simple binary safe using the DE-10 Lite Board, written (by me) in Verilog.
 
 🚀 Features:
 • 4-character PIN
@@ -48,3 +48,5 @@ the ability for the user to set their own preferred PIN once the
 safe is initially unlocked. I would also build around the failed
 attempts idea and exponentially increase the countdown time duration
 every time the user further makes an invalid attempt.
+
+Created by Adren Reuel
