@@ -1,0 +1,182 @@
+|FinalProject
+clock => clock.IN1
+switches[0] => digit4.DATAB
+switches[0] => digit3.DATAB
+switches[0] => digit2.DATAB
+switches[0] => digit1.DATAB
+switches[1] => digit4.DATAB
+switches[1] => digit3.DATAB
+switches[1] => digit2.DATAB
+switches[1] => digit1.DATAB
+switches[2] => digit4.DATAB
+switches[2] => digit3.DATAB
+switches[2] => digit2.DATAB
+switches[2] => digit1.DATAB
+switches[3] => digit4.DATAB
+switches[3] => digit3.DATAB
+switches[3] => digit2.DATAB
+switches[3] => digit1.DATAB
+action => save_state_curr_action.DATAB
+action => always0.IN1
+action => always0.IN1
+save => save_state_prev.DATAB
+save => always0.IN1
+light1[0] << decimal_decoder:d1.seg[0]
+light1[1] << decimal_decoder:d1.seg[1]
+light1[2] << decimal_decoder:d1.seg[2]
+light1[3] << decimal_decoder:d1.seg[3]
+light1[4] << decimal_decoder:d1.seg[4]
+light1[5] << decimal_decoder:d1.seg[5]
+light1[6] << decimal_decoder:d1.seg[6]
+light2[0] << decimal_decoder:d2.seg[0]
+light2[1] << decimal_decoder:d2.seg[1]
+light2[2] << decimal_decoder:d2.seg[2]
+light2[3] << decimal_decoder:d2.seg[3]
+light2[4] << decimal_decoder:d2.seg[4]
+light2[5] << decimal_decoder:d2.seg[5]
+light2[6] << decimal_decoder:d2.seg[6]
+light3[0] << decimal_decoder:d3.seg[0]
+light3[1] << decimal_decoder:d3.seg[1]
+light3[2] << decimal_decoder:d3.seg[2]
+light3[3] << decimal_decoder:d3.seg[3]
+light3[4] << decimal_decoder:d3.seg[4]
+light3[5] << decimal_decoder:d3.seg[5]
+light3[6] << decimal_decoder:d3.seg[6]
+light4[0] << decimal_decoder:d4.seg[0]
+light4[1] << decimal_decoder:d4.seg[1]
+light4[2] << decimal_decoder:d4.seg[2]
+light4[3] << decimal_decoder:d4.seg[3]
+light4[4] << decimal_decoder:d4.seg[4]
+light4[5] << decimal_decoder:d4.seg[5]
+light4[6] << decimal_decoder:d4.seg[6]
+leds[0] << led_control[0].DB_MAX_OUTPUT_PORT_TYPE
+leds[1] << led_control[1].DB_MAX_OUTPUT_PORT_TYPE
+leds[2] << led_control[2].DB_MAX_OUTPUT_PORT_TYPE
+leds[3] << led_control[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FinalProject|clock_divider:comb_3
+c_in => c_out~reg0.CLK
+c_in => count[0].CLK
+c_in => count[1].CLK
+c_in => count[2].CLK
+c_in => count[3].CLK
+c_in => count[4].CLK
+c_in => count[5].CLK
+c_in => count[6].CLK
+c_in => count[7].CLK
+c_in => count[8].CLK
+c_in => count[9].CLK
+c_in => count[10].CLK
+c_in => count[11].CLK
+c_in => count[12].CLK
+c_in => count[13].CLK
+c_in => count[14].CLK
+c_in => count[15].CLK
+c_in => count[16].CLK
+c_in => count[17].CLK
+c_in => count[18].CLK
+c_in => count[19].CLK
+c_in => count[20].CLK
+c_in => count[21].CLK
+c_in => count[22].CLK
+c_in => count[23].CLK
+c_in => count[24].CLK
+c_in => count[25].CLK
+c_in => count[26].CLK
+c_in => count[27].CLK
+c_in => count[28].CLK
+c_in => count[29].CLK
+c_in => count[30].CLK
+c_in => count[31].CLK
+c_out <= c_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FinalProject|decimal_decoder:d1
+hex[0] => Decoder0.IN4
+hex[1] => Decoder0.IN3
+hex[2] => Decoder0.IN2
+hex[3] => Decoder0.IN1
+hex[4] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+
+
+|FinalProject|decimal_decoder:d2
+hex[0] => Decoder0.IN4
+hex[1] => Decoder0.IN3
+hex[2] => Decoder0.IN2
+hex[3] => Decoder0.IN1
+hex[4] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+
+
+|FinalProject|decimal_decoder:d3
+hex[0] => Decoder0.IN4
+hex[1] => Decoder0.IN3
+hex[2] => Decoder0.IN2
+hex[3] => Decoder0.IN1
+hex[4] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+
+
+|FinalProject|decimal_decoder:d4
+hex[0] => Decoder0.IN4
+hex[1] => Decoder0.IN3
+hex[2] => Decoder0.IN2
+hex[3] => Decoder0.IN1
+hex[4] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+blink_toggle => seg.OUTPUTSELECT
+
+

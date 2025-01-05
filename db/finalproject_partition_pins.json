@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "light1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "light1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "light1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "light1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "light1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "light2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "light3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "light4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "action",
+					"strict" : false
+				},
+				{
+					"name" : "switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[3]",
+					"strict" : false
+				},
+				{
+					"name" : "save",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
